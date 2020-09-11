@@ -5,5 +5,5 @@ COPY go.sum .
 RUN go mod download
 COPY . .
 RUN go build -o /go/src/app .
-EXPOSE 8081:8081
+EXPOSE 8081
 CMD ["./client"]
