@@ -6,4 +6,4 @@ RUN go mod download
 COPY . .
 RUN go build .
 EXPOSE 8081
-CMD ["server"]
+CMD ["client"]
